@@ -1,71 +1,114 @@
-import { useParams, useEffect, useState } from "react";
-import FeaturedPost from "../components/FeaturedPost";
-import CategorySection from "../components/CategorySection";
-import BlogPostCard from "../components/BlogPostCard";
-import AuthorBio from "../components/AuthorBio";
-import DestinationsList from "../components/DestinationsList";
-import Pagination from "../components/Pagination";
-import "./HomePage.css";
+import FeaturedPost from "../components/FeaturedPost"
+import CategorySection from "../components/CategorySection"
+import BlogPostCard from "../components/BlogPostCard"
+import DestinationsList from "../components/DestinationsList"
+import Pagination from "../components/Pagination"
+import "./HomePage.css"
+import { Link } from "react-router-dom"
 
 const HomePage = () => {
-  const { pageNumber } = useParams();
-  const currentPage = pageNumber ? parseInt(pageNumber) : 1;
+  // Update the featured post and recent posts to be Mother's Day related
+  const featuredPost = {
+    title: "A Letter to My Mom: Thank You for Everything",
+    slug: "letter-to-mom-thank-you",
+    category: "Letters",
+    excerpt:
+      "Mom, words cannot express how grateful I am for all the sacrifices you've made and the love you've shown me throughout my life...",
+    image: "/images/mother-daughter.jpg",
+  }
 
-  const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const recentPosts = [
+    {
+      title: "The Lessons My Mother Taught Me That I'll Never Forget",
+      slug: "lessons-from-mother",
+      category: "Stories",
+      excerpt:
+        "My mother wasn't one for long lectures, but the quiet lessons she taught through her actions have shaped who I am today...",
+      image: "/images/mother-lessons.jpg",
+      readingTime: "8 minutes",
+      author: "Sarah Johnson",
+    },
+    {
+      title: "A Poem for the Woman Who Raised Me",
+      slug: "poem-for-mom",
+      category: "Poems",
+      excerpt:
+        "In the quiet moments of dawn, I think of you. Your hands, weathered by time but gentle in their touch, have guided me through life's storms...",
+      image: "/images/mother-poem.jpg",
+      readingTime: "5 minutes",
+      author: "Michael Chen",
+    },
+    {
+      title: "Celebrating My Grandmother: The Matriarch of Our Family",
+      slug: "celebrating-grandmother",
+      category: "Tributes",
+      excerpt:
+        "My grandmother raised eight children during times of hardship, yet she never lost her smile or her ability to make everyone feel special...",
+      image: "/images/grandmother.jpg",
+      readingTime: "10 minutes",
+      author: "Elena Rodriguez",
+    },
+  ]
 
-  const postsPerPage = 3;
-
-  useEffect(() => {
-    // Fetch the posts from your API or database
-    fetch(`/api/posts?page=${currentPage}&limit=${postsPerPage}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setPosts(data.posts);  // Assuming your API returns a list of posts
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error("Error fetching posts:", error);
-        setLoading(false);
-      });
-  }, [currentPage]);
-
-  const totalPosts = posts.length > 0 ? posts.length : 0; // Get total number of posts
-  const totalPages = Math.ceil(totalPosts / postsPerPage);
-
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const currentPosts = posts.slice(startIndex, startIndex + postsPerPage);
-
+  // Add a writers section to the homepage
   return (
     <div className="home-page">
       <section className="hero-section">
-        {currentPosts.length > 0 && <FeaturedPost post={currentPosts[0]} />}
+        <FeaturedPost post={featuredPost} />
       </section>
 
       <CategorySection />
 
       <section className="recent-articles">
-        <h2 className="section-title">Recent articles</h2>
+        <h2 className="section-title">Recent tributes</h2>
         <div className="articles-grid">
           <div className="main-content">
-            {loading ? (
-              <p>Loading posts...</p>
-            ) : (
-              currentPosts.map((post, index) => (
-                <BlogPostCard key={index} post={post} />
-              ))
-            )}
-            <Pagination currentPage={currentPage} totalPages={totalPages} />
+            {recentPosts.map((post, index) => (
+              <BlogPostCard key={index} post={post} />
+            ))}
+            <Pagination currentPage={1} totalPages={14} />
           </div>
 
           <aside className="sidebar">
-            <AuthorBio />
+            <div className="featured-writers">
+              <h3 className="sidebar-title">Featured Writers</h3>
+              <div className="writers-list">
+                <div className="writer-item">
+                  <img src="/images/writer-sarah.jpg" alt="Sarah Johnson" className="writer-image" />
+                  <h4>Sarah Johnson</h4>
+                  <p>Mother of two, sharing stories about her journey through motherhood.</p>
+                </div>
+                <div className="writer-item">
+                  <img src="/images/writer-michael.jpg" alt="Michael Chen" className="writer-image" />
+                  <h4>Michael Chen</h4>
+                  <p>Poet and son honoring his mother's influence on his life.</p>
+                </div>
+                <div className="writer-item">
+                  <img src="/images/writer-elena.jpg" alt="Elena Rodriguez" className="writer-image" />
+                  <h4>Elena Rodriguez</h4>
+                  <p>Celebrating three generations of strong women in her family.</p>
+                </div>
+              </div>
+              <Link to="/writers" className="read-more-btn">
+                View All Writers
+              </Link>
+            </div>
             <DestinationsList />
           </aside>
         </div>
       </section>
-    </div>
-  );
-};
 
-export default HomePage;
+      <section className="contribute-section">
+        <div className="contribute-container">
+          <h2>Share Your Mother's Day Tribute</h2>
+          <p>Honor your mother or a maternal figure in your life by sharing your story, poem, or letter.</p>
+          <Link to="/contribute" className="read-more-btn">
+            Contribute Now
+          </Link>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default HomePage
