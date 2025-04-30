@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
-import "./Footer.css";
+import { Link } from "react-router-dom"
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa"
+import "./Footer.css"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-social">
-          <h3>Follow me on Instagram</h3>
+          <h3>Share Your Mother's Day Tribute</h3>
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
@@ -29,16 +29,16 @@ const Footer = () => {
             <h4>Categories</h4>
             <ul>
               <li>
-                <Link to="/category/mothers-day-tributes">Mother's Day Tributes</Link>
+                <Link to="/category/stories">Stories</Link>
               </li>
               <li>
-                <Link to="/category/lessons-from-moms">Lessons from Moms</Link>
+                <Link to="/category/poems">Poems</Link>
               </li>
               <li>
-                <Link to="/category/personal-stories">Personal Stories</Link>
+                <Link to="/category/letters">Letters</Link>
               </li>
               <li>
-                <Link to="/category/messages-of-love">Messages of Love</Link>
+                <Link to="/category/memories">Memories</Link>
               </li>
             </ul>
           </div>
@@ -47,16 +47,16 @@ const Footer = () => {
             <h4>Popular Tributes</h4>
             <ul>
               <li>
-                <Link to="/category/gratitude">Gratitude for Mom</Link>
+                <Link to="/category/first-time-moms">First-Time Moms</Link>
               </li>
               <li>
-                <Link to="/category/love-and-care">Love and Care</Link>
+                <Link to="/category/grandmothers">Grandmothers</Link>
               </li>
               <li>
-                <Link to="/category/life-lessons">Life Lessons from Moms</Link>
+                <Link to="/category/single-moms">Single Moms</Link>
               </li>
               <li>
-                <Link to="/category/inspiring-stories">Inspiring Mom Stories</Link>
+                <Link to="/category/mother-figures">Mother Figures</Link>
               </li>
             </ul>
           </div>
@@ -65,10 +65,10 @@ const Footer = () => {
             <h4>About</h4>
             <ul>
               <li>
-                <Link to="/about">About Me</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contribute">Contribute</Link>
               </li>
               <li>
                 <Link to="/privacy">Privacy Policy</Link>
@@ -78,11 +78,11 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Mother's Day Tribute Blog. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mother's Day Tributes. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
