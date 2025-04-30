@@ -10,7 +10,7 @@ const AboutPage = () => {
 
       <div className="about-content">
         <div className="author-image">
-          <img src="/images/author-large.jpg" alt="Author's Image" />
+          <img src="/images/author-large.jpg" alt="Portrait of the author" />
         </div>
 
         <div className="author-info">
@@ -97,3 +97,4 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
