@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage"
 import BlogPost from "./pages/BlogPost"
 import CategoryPage from "./pages/CategoryPage"
 import AboutPage from "./pages/AboutPage"
+import ContributePage from "./pages/ContributePage"
 import "./App.css"
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             <Route path="/post/:slug" element={<BlogPost />} />
             <Route path="/category/:category" element={<CategoryPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/page/:pageNumber" element={<HomePage />} /> {/* Pagination route */}
+            <Route path="/contribute" element={<ContributePage />} />
           </Routes>
         </main>
         <Footer />
@@ -28,4 +29,3 @@ function App() {
 }
 
 export default App
-
