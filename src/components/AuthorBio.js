@@ -1,21 +1,19 @@
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
-import "./AuthorBio.css";
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa"
+import "./AuthorBio.css"
 
 const AuthorBio = () => {
   return (
     <div className="author-bio">
       <div className="author-image">
-        <img src="/images/author.jpg" alt="Praveen" />
+        <img src="/images/mothers-day-logo.jpg" alt="Mother's Day Tributes" />
       </div>
-      <h3 className="author-name">Praveen</h3>
+      <h3 className="author-name">Mother's Day Tributes</h3>
       <p className="author-description">
-        A heartfelt tribute to the unsung heroes – mothers. I'm passionate about sharing stories and messages of love
-        and gratitude to honor mothers everywhere. This blog is my small way of celebrating the incredible strength,
-        sacrifice, and unconditional love that mothers provide. Through these words, I aim to express the emotions that
-        words often fail to capture.
+        This blog is dedicated to celebrating mothers and mother figures everywhere. We feature stories, poems, letters,
+        and memories from writers around the world who want to honor the special women in their lives.
       </p>
       <div className="author-social">
-        <h4>Follow me</h4>
+        <h4>Follow us</h4>
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
@@ -32,7 +30,7 @@ const AuthorBio = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AuthorBio;
+export default AuthorBio
