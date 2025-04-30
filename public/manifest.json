@@ -1,6 +1,6 @@
 {
-  "short_name": "Mothers Day Blog",
-  "name": "Mother's Day Tribute Blog",
+  "short_name": "Mom Tributes",
+  "name": "Mother's Day Tributes",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#FFB6C1", 
-  "background_color": "#fff0f5"
+  "theme_color": "#e84a5f",
+  "background_color": "#ffffff"
 }
