@@ -14,7 +14,7 @@ const HomePage = () => {
     category: "Letters",
     excerpt:
       "Mom, words cannot express how grateful I am for all the sacrifices you've made and the love you've shown me throughout my life...",
-    image: "https://static.vecteezy.com/system/resources/previews/023/797/200/non_2x/illustration-of-a-mother-holding-her-child-concept-of-the-relationship-between-mother-and-child-mother-s-day-mother-s-love-vector.jpg",
+    image: "https://img.freepik.com/premium-vector/hand-drawn-illustration-mother-child-mothers-day_278222-10960.jpg?semt=ais_hybrid&w=740",
   }
 
   const recentPosts = [
