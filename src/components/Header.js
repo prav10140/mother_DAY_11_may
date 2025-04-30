@@ -27,7 +27,7 @@ const Header = () => {
         </button>
 
         <div className="logo">
-          <Link to="/">Personal Travel Blog</Link>
+          <Link to="/">Mother's Day Tribute Blog</Link>
         </div>
 
         <button className="search-button" onClick={toggleSearch}>
@@ -44,23 +44,23 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/category/travels" onClick={() => setMenuOpen(false)}>
-                Travels
+              <Link to="/category/mothers-day-tributes" onClick={() => setMenuOpen(false)}>
+                Mother's Day Tributes
               </Link>
             </li>
             <li>
-              <Link to="/category/foods" onClick={() => setMenuOpen(false)}>
-                Foods
+              <Link to="/category/lessons-from-moms" onClick={() => setMenuOpen(false)}>
+                Lessons from Moms
               </Link>
             </li>
             <li>
-              <Link to="/category/guides" onClick={() => setMenuOpen(false)}>
-                Guides
+              <Link to="/category/personal-stories" onClick={() => setMenuOpen(false)}>
+                Personal Stories
               </Link>
             </li>
             <li>
-              <Link to="/category/stories" onClick={() => setMenuOpen(false)}>
-                Stories
+              <Link to="/category/messages-of-love" onClick={() => setMenuOpen(false)}>
+                Messages of Love
               </Link>
             </li>
             <li>
@@ -75,7 +75,7 @@ const Header = () => {
       {searchOpen && (
         <div className="search-container">
           <form>
-            <input type="text" placeholder="Search..." />
+            <input type="text" placeholder="Search tributes..." />
             <button type="submit">Search</button>
           </form>
         </div>
