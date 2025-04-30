@@ -1,6 +1,6 @@
 {
-  "short_name": "Travel Blog",
-  "name": "Personal Travel Blog",
+  "short_name": "Mothers Day Blog",
+  "name": "Mother's Day Tribute Blog",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FFB6C1", 
+  "background_color": "#fff0f5"
 }
