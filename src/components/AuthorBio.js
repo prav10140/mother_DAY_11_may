@@ -1,17 +1,18 @@
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa"
-import "./AuthorBio.css"
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import "./AuthorBio.css";
 
 const AuthorBio = () => {
   return (
     <div className="author-bio">
       <div className="author-image">
-        <img src="/images/author.jpg" alt="Jaspreet Bhamrai" />
+        <img src="/images/author.jpg" alt="Praveen" />
       </div>
-      <h3 className="author-name">Jaspreet Bhamrai</h3>
+      <h3 className="author-name">Praveen</h3>
       <p className="author-description">
-        For as long as I can remember I've been obsessed with the idea of travel. I was always that person who was
-        forever daydreaming of faraway destinations and planning my next adventure. I started this blog to share my
-        travel experiences that would challenge my perceptions and help me gain a deeper understanding of the world.
+        A heartfelt tribute to the unsung heroes – mothers. I'm passionate about sharing stories and messages of love
+        and gratitude to honor mothers everywhere. This blog is my small way of celebrating the incredible strength,
+        sacrifice, and unconditional love that mothers provide. Through these words, I aim to express the emotions that
+        words often fail to capture.
       </p>
       <div className="author-social">
         <h4>Follow me</h4>
@@ -31,7 +32,7 @@ const AuthorBio = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AuthorBio
+export default AuthorBio;
