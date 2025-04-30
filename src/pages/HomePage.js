@@ -9,40 +9,40 @@ import "./HomePage.css"
 const HomePage = () => {
   // This would typically come from an API or CMS
   const featuredPost = {
-    title: "When Is The Best Time of Year To Visit Japan?",
-    slug: "best-time-to-visit-japan",
-    category: "Travel",
-    excerpt: "The most news for travelers is that there is no single best time of year to travel to Japan...",
-    image: "/images/japan-featured.jpg",
+    title: "A Heartfelt Tribute to My Mother",
+    slug: "mothers-day-tribute",
+    category: "Life & Reflections",
+    excerpt: "On this Mother’s Day, I pause to honor the woman whose love, strength, and sacrifices have shaped my world...",
+    image: "/images/mothers-day-featured.jpg",
   }
 
   const recentPosts = [
     {
-      title: "Coventry City Guide Including Coventry Hotels",
-      slug: "coventry-city-guide",
-      category: "Guides",
+      title: "10 Lessons My Mother Taught Me",
+      slug: "life-lessons-from-mom",
+      category: "Life Advice",
       excerpt:
-        "The diseases most commonly seen in travelers are diarrhea, malaria (if you travel to a malaria-endemic area), accident-related injuries, and respiratory infections...",
+        "From resilience to kindness, here are the most important lessons I’ve learned from my mom over the years...",
       image: "/images/coventry.jpg",
       readingTime: "8 minutes",
     },
     {
-      title: "Planning a Trip to Japan in the Time of Covid",
-      slug: "japan-trip-covid",
-      category: "Guides",
+      title: "Why Moms Are Everyday Superheroes",
+      slug: "moms-are-superheroes",
+      category: "Inspiration",
       excerpt:
-        "Whether you're just daydreaming for the moment, or planning a trip, compiled essential information about visiting Japan in the time of COVID-19...",
-      image: "/images/japan-covid.jpg",
-      readingTime: "6 minutes",
+        "They may not wear capes, but mothers have a power and presence that lift everyone around them...",
+      image: "/images/mom-superhero.jpg",
+      readingTime: "4 minutes",
     },
     {
-      title: "How to Choose an African Safari (That's Right for You)",
-      slug: "choose-african-safari",
-      category: "Guides",
+      title: "Mother’s Day Gift Ideas with Meaning",
+      slug: "mothers-day-gifts",
+      category: "Lifestyle",
       excerpt:
-        "In my time exploring the heart of Africa, I have come to realize that there's a different type of safari for every kind of traveler. To fashion your own dream African adventure, it's all about prioritizing...",
-      image: "/images/african-safari.jpg",
-      readingTime: "10 minutes",
+        "This Mother’s Day, go beyond the ordinary—here are heartfelt gift ideas that show your mom just how much you care...",
+      image: "/images/gift-ideas.jpg",
+      readingTime: "6 minutes",
     },
   ]
 
