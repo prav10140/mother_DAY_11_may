@@ -20,9 +20,12 @@ const BlogPostCard = ({ post }) => {
           <Link to={`/post/${post.slug}`}>{post.title}</Link>
         </h3>
         <p className="post-excerpt">{post.excerpt}</p>
-        <Link to={`/post/${post.slug}`} className="read-more-btn">
-          Read more
-        </Link>
+        <div className="post-footer">
+          {post.author && <span className="post-author">By {post.author}</span>}
+          <Link to={`/post/${post.slug}`} className="read-more-btn">
+            Read more
+          </Link>
+        </div>
       </div>
     </article>
   )
