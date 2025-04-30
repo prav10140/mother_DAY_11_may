@@ -1,0 +1,41 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero-section {
+  margin: 2rem 0;
+}
+
+.recent-articles {
+  margin: 3rem 0;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.main-content {
+  order: 2;
+}
+
+.sidebar {
+  order: 1;
+}
+
+@media (min-width: 992px) {
+  .articles-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .main-content {
+    order: 1;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+}
