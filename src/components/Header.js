@@ -27,7 +27,7 @@ const Header = () => {
         </button>
 
         <div className="logo">
-          <Link to="/">Mother's Day Tribute Blog</Link>
+          <Link to="/">Mother's Day Tributes</Link>
         </div>
 
         <button className="search-button" onClick={toggleSearch}>
@@ -44,28 +44,33 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/category/mothers-day-tributes" onClick={() => setMenuOpen(false)}>
-                Mother's Day Tributes
+              <Link to="/category/stories" onClick={() => setMenuOpen(false)}>
+                Stories
               </Link>
             </li>
             <li>
-              <Link to="/category/lessons-from-moms" onClick={() => setMenuOpen(false)}>
-                Lessons from Moms
+              <Link to="/category/poems" onClick={() => setMenuOpen(false)}>
+                Poems
               </Link>
             </li>
             <li>
-              <Link to="/category/personal-stories" onClick={() => setMenuOpen(false)}>
-                Personal Stories
+              <Link to="/category/letters" onClick={() => setMenuOpen(false)}>
+                Letters
               </Link>
             </li>
             <li>
-              <Link to="/category/messages-of-love" onClick={() => setMenuOpen(false)}>
-                Messages of Love
+              <Link to="/category/memories" onClick={() => setMenuOpen(false)}>
+                Memories
               </Link>
             </li>
             <li>
               <Link to="/about" onClick={() => setMenuOpen(false)}>
                 About
+              </Link>
+            </li>
+            <li>
+              <Link to="/contribute" onClick={() => setMenuOpen(false)}>
+                Contribute
               </Link>
             </li>
           </ul>
@@ -75,7 +80,7 @@ const Header = () => {
       {searchOpen && (
         <div className="search-container">
           <form>
-            <input type="text" placeholder="Search tributes..." />
+            <input type="text" placeholder="Search..." />
             <button type="submit">Search</button>
           </form>
         </div>
