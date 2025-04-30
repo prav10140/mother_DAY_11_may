@@ -1,3 +1,4 @@
+// src/data/blogPosts.js
 const blogPosts = [
   {
     title: "A Heartfelt Tribute to Mothers: Celebrating Unseen Heroes",
@@ -31,7 +32,99 @@ const blogPosts = [
       },
     ],
   },
-  // ...other posts
+  {
+    title: "10 Ways to Show Your Love to Mom on Mother’s Day",
+    slug: "ways-to-show-love",
+    category: "Lifestyle",
+    date: "May 10, 2025",
+    author: "Praveen",
+    readingTime: "4 minutes",
+    image: "/images/show-love-to-mom.jpg",
+    content: `
+      <p>Mother’s Day is the perfect occasion to remind your mom just how much she means to you. Here are ten heartfelt ways you can show your love this Mother’s Day...</p>
+      <p>From personalized gifts to heartfelt notes, each gesture will make her feel cherished and appreciated.</p>
+    `,
+    relatedPosts: [
+      {
+        title: "Creative Ways to Celebrate Mother's Day at Home",
+        slug: "celebrate-at-home",
+        category: "Lifestyle",
+        excerpt: "From handwritten notes to DIY brunch ideas...",
+        image: "/images/mothers-day-home.jpg",
+        readingTime: "6 minutes",
+      },
+      {
+        title: "The Best Mother’s Day Gifts for Every Budget",
+        slug: "best-gifts-for-mom",
+        category: "Gifts & Crafts",
+        excerpt: "Whether you’re on a budget or willing to splurge, here are some gift ideas that will make your mom’s day...",
+        image: "/images/mothers-day-gifts.jpg",
+        readingTime: "5 minutes",
+      },
+    ],
+  },
+  {
+    title: "A Tribute to My Supermom: A Mother's Love Like No Other",
+    slug: "supermom-tribute",
+    category: "Tributes",
+    date: "May 8, 2025",
+    author: "Praveen",
+    readingTime: "6 minutes",
+    image: "/images/supermom-tribute.jpg",
+    content: `
+      <p>There’s no love quite like the love a mother has for her child. My mom’s love has always been my greatest source of strength...</p>
+      <p>Through every challenge and every triumph, she has been my unwavering support. This tribute is for the mother who gave me everything...</p>
+    `,
+    relatedPosts: [
+      {
+        title: "Lessons from My Supermom: Strength, Grace, and Love",
+        slug: "lessons-from-supermom",
+        category: "Reflections",
+        excerpt: "What I’ve learned from my mom is beyond words. Her resilience and grace continue to inspire me every day...",
+        image: "/images/mom-lessons.jpg",
+        readingTime: "5 minutes",
+      },
+      {
+        title: "The Role of a Mother in Shaping Strong Values",
+        slug: "mom-and-values",
+        category: "Reflections",
+        excerpt: "Mothers shape who we are—instilling values that last a lifetime...",
+        image: "/images/mom-values.jpg",
+        readingTime: "4 minutes",
+      },
+    ],
+  },
+  {
+    title: "Why We Celebrate Mother's Day Around the World",
+    slug: "global-mothers-day",
+    category: "Tributes",
+    date: "May 5, 2025",
+    author: "Praveen",
+    readingTime: "6 minutes",
+    image: "/images/mothers-day-global.jpg",
+    content: `
+      <p>Mother’s Day is celebrated across the globe, but each culture has its own unique traditions. From gifting flowers to preparing special meals, here’s how different countries honor mothers...</p>
+    `,
+    relatedPosts: [
+      {
+        title: "The Importance of Motherhood in Different Cultures",
+        slug: "motherhood-in-cultures",
+        category: "Reflections",
+        excerpt: "Across cultures, motherhood is seen as a sacred and revered role...",
+        image: "/images/motherhood-cultures.jpg",
+        readingTime: "5 minutes",
+      },
+      {
+        title: "Mother's Day Traditions: What Makes Them Special",
+        slug: "mothers-day-traditions",
+        category: "Lifestyle",
+        excerpt: "Explore the unique ways Mother's Day is celebrated worldwide...",
+        image: "/images/mothers-day-traditions.jpg",
+        readingTime: "5 minutes",
+      },
+    ],
+  },
+  // Add more posts as needed
 ];
 
 export default blogPosts;
