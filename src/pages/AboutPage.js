@@ -15,7 +15,7 @@ const AboutPage = () => {
 
         <div className="author-info">
           <h2 className="author-name">P R A V E E N'</h2>
-          <p className="author-tagline">Mother's Day Blogger & Advocate</p>
+          <p className="author-tagline">Mother's Day Blogger</p>
 
           <div className="author-bio">
             <p>
