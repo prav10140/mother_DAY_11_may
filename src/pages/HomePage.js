@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import FeaturedPost from "../components/FeaturedPost"
 import CategorySection from "../components/CategorySection"
 import BlogPostCard from "../components/BlogPostCard"
@@ -21,8 +22,7 @@ const HomePage = () => {
       title: "10 Lessons My Mother Taught Me",
       slug: "life-lessons-from-mom",
       category: "Life Advice",
-      excerpt:
-        "From resilience to kindness, here are the most important lessons I’ve learned from my mom over the years...",
+      excerpt: "From resilience to kindness, here are the most important lessons I’ve learned from my mom over the years...",
       image: "/images/coventry.jpg",
       readingTime: "8 minutes",
     },
@@ -30,8 +30,7 @@ const HomePage = () => {
       title: "Why Moms Are Everyday Superheroes",
       slug: "moms-are-superheroes",
       category: "Inspiration",
-      excerpt:
-        "They may not wear capes, but mothers have a power and presence that lift everyone around them...",
+      excerpt: "They may not wear capes, but mothers have a power and presence that lift everyone around them...",
       image: "/images/mom-superhero.jpg",
       readingTime: "4 minutes",
     },
@@ -39,8 +38,7 @@ const HomePage = () => {
       title: "Mother’s Day Gift Ideas with Meaning",
       slug: "mothers-day-gifts",
       category: "Lifestyle",
-      excerpt:
-        "This Mother’s Day, go beyond the ordinary—here are heartfelt gift ideas that show your mom just how much you care...",
+      excerpt: "This Mother’s Day, go beyond the ordinary—here are heartfelt gift ideas that show your mom just how much you care...",
       image: "/images/gift-ideas.jpg",
       readingTime: "6 minutes",
     },
