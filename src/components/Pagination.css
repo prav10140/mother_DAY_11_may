@@ -1,0 +1,49 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.page-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.25rem;
+  border: 1px solid #eaeaea;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.page-number:hover {
+  background-color: #f9f9f9;
+}
+
+.page-number.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.25rem;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.page-nav:hover {
+  background-color: #f9f9f9;
+}
+
+.page-nav.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
