@@ -41,7 +41,14 @@ const blogPosts = [
     readingTime: "4 minutes",
     image: "/images/show-love-to-mom.jpg",
     content: `
-      <p>Mother’s Day is the perfect occasion to remind your mom just how much she means to you. Here are ten heartfelt ways you can show your love this Mother’s Day...</p>
+      <p>Mother’s Day is the perfect occasion to remind your mom just how much she means to you. Here are ten heartfelt ways you can show your love this Mother’s Day:</p>
+      <ol>
+        <li>Write her a heartfelt letter expressing your love and gratitude.</li>
+        <li>Cook her favorite meal or bake a special treat for her.</li>
+        <li>Give her a thoughtful personalized gift.</li>
+        <li>Plan a relaxing day for her at home or at her favorite place.</li>
+        <li>Spend quality time with her, reminiscing old memories.</li>
+      </ol>
       <p>From personalized gifts to heartfelt notes, each gesture will make her feel cherished and appreciated.</p>
     `,
     relatedPosts: [
@@ -124,7 +131,43 @@ const blogPosts = [
       },
     ],
   },
-  // Add more posts as needed
+  {
+    title: "The Best Mother’s Day Gifts for Every Budget",
+    slug: "best-gifts-for-mom",
+    category: "Gifts & Crafts",
+    date: "May 6, 2025",
+    author: "Praveen",
+    readingTime: "5 minutes",
+    image: "/images/mothers-day-gifts.jpg",
+    content: `
+      <p>Mother’s Day is just around the corner, and you might be looking for the perfect gift. Whether you're on a budget or willing to splurge, here are some thoughtful and affordable gift ideas...</p>
+      <ul>
+        <li><strong>Budget-friendly gifts:</strong> Personalized photo frames, handmade cards, or a DIY spa kit.</li>
+        <li><strong>Mid-range gifts:</strong> A quality cookbook, a personalized jewelry piece, or a home plant.</li>
+        <li><strong>Luxury gifts:</strong> A designer handbag, a weekend getaway, or a fine piece of jewelry.</li>
+      </ul>
+      <p>Remember, the best gifts come from the heart, no matter the price!</p>
+    `,
+    relatedPosts: [
+      {
+        title: "10 Ways to Show Your Love to Mom on Mother’s Day",
+        slug: "ways-to-show-love",
+        category: "Lifestyle",
+        excerpt: "Mother’s Day is the perfect occasion to remind your mom just how much she means to you...",
+        image: "/images/show-love-to-mom.jpg",
+        readingTime: "4 minutes",
+      },
+      {
+        title: "Creative Ways to Celebrate Mother's Day at Home",
+        slug: "celebrate-at-home",
+        category: "Lifestyle",
+        excerpt: "From handwritten notes to DIY brunch ideas...",
+        image: "/images/mothers-day-home.jpg",
+        readingTime: "6 minutes",
+      },
+    ],
+  },
+  // Additional posts can be added similarly
 ];
 
 export default blogPosts;
