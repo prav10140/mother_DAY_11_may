@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa"
-import "./Footer.css"
+import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -29,34 +29,34 @@ const Footer = () => {
             <h4>Categories</h4>
             <ul>
               <li>
-                <Link to="/category/travels">Travels</Link>
+                <Link to="/category/mothers-day-tributes">Mother's Day Tributes</Link>
               </li>
               <li>
-                <Link to="/category/foods">Foods</Link>
+                <Link to="/category/lessons-from-moms">Lessons from Moms</Link>
               </li>
               <li>
-                <Link to="/category/guides">Guides</Link>
+                <Link to="/category/personal-stories">Personal Stories</Link>
               </li>
               <li>
-                <Link to="/category/stories">Stories</Link>
+                <Link to="/category/messages-of-love">Messages of Love</Link>
               </li>
             </ul>
           </div>
 
           <div className="footer-column">
-            <h4>Popular Destinations</h4>
+            <h4>Popular Tributes</h4>
             <ul>
               <li>
-                <Link to="/category/tokyo">Tokyo</Link>
+                <Link to="/category/gratitude">Gratitude for Mom</Link>
               </li>
               <li>
-                <Link to="/category/rome">Rome</Link>
+                <Link to="/category/love-and-care">Love and Care</Link>
               </li>
               <li>
-                <Link to="/category/san-francisco">San Francisco</Link>
+                <Link to="/category/life-lessons">Life Lessons from Moms</Link>
               </li>
               <li>
-                <Link to="/category/san-jose">San Jose</Link>
+                <Link to="/category/inspiring-stories">Inspiring Mom Stories</Link>
               </li>
             </ul>
           </div>
@@ -78,11 +78,11 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Personal Travel Blog. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mother's Day Tribute Blog. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
