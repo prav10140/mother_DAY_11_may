@@ -65,7 +65,7 @@ button {
 
 .read-more-btn {
   display: inline-block;
-  background-color: #000;
+  background-color: #e84a5f;
   color: #fff;
   padding: 0.5rem 1rem;
   font-family: "Montserrat", sans-serif;
@@ -76,7 +76,7 @@ button {
 }
 
 .read-more-btn:hover {
-  background-color: #333;
+  background-color: #d1365b;
   color: #fff;
 }
 
@@ -91,9 +91,95 @@ main {
   flex: 1;
 }
 
+/* Add styles for the writers section */
+.featured-writers {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.writers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.writer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.writer-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.writer-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.writer-item p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Add styles for the contribute section */
+.contribute-section {
+  margin: 3rem 0;
+}
+
+.contribute-container {
+  background-color: #f8e1e7;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contribute-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e84a5f;
+}
+
+.contribute-container p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.post-author {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #666;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .section-title {
     font-size: 1.25rem;
   }
 }
+
