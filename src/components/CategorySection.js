@@ -30,7 +30,11 @@ const CategorySection = () => {
       <div className="category-navigation">
         <div className="categories-container">
           {categories.map((category, index) => (
-            <Link to={`/category/${category.name.replace(/\s+/g, '-').toLowerCase()}`} className="category-item" key={index}>
+            <Link
+              to={`/category/${category.name.replace(/\s+/g, '-').toLowerCase()}`}
+              className="category-item"
+              key={index}
+            >
               <div className="category-image">
                 <img src={category.image || "/placeholder.svg"} alt={category.name} />
               </div>
@@ -39,8 +43,12 @@ const CategorySection = () => {
           ))}
         </div>
         <div className="category-controls">
-          <button className="category-nav prev" onClick={handlePrev}>&#10094;</button>
-          <button className="category-nav next" onClick={handleNext}>&#10095;</button>
+          <button className="category-nav prev" onClick={handlePrev}>
+            &#10094;
+          </button>
+          <button className="category-nav next" onClick={handleNext}>
+            &#10095;
+          </button>
         </div>
       </div>
     </section>
