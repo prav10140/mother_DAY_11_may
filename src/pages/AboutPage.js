@@ -10,37 +10,32 @@ const AboutPage = () => {
 
       <div className="about-content">
         <div className="author-image">
-          <img src="/images/author-large.jpg" alt="Jaspreet Bhamrai" />
+          <img src="/images/author-large.jpg" alt="Author's Image" />
         </div>
 
         <div className="author-info">
-          <h2 className="author-name">Jaspreet Bhamrai</h2>
-          <p className="author-tagline">Travel Writer & Photographer</p>
+          <h2 className="author-name">[Your Name]</h2>
+          <p className="author-tagline">Mother's Day Blogger & Advocate</p>
 
           <div className="author-bio">
             <p>
-              For as long as I can remember I've been obsessed with the idea of travel. I was always that person who was
-              forever daydreaming of faraway destinations and planning my next adventure.
+              As a child, I always looked up to my mother as a source of wisdom and love. Growing up, I realized the
+              power of a mother's influence and the extraordinary love that shapes our lives. This blog is a tribute to
+              all mothers, celebrating their unwavering strength, wisdom, and unconditional love.
             </p>
 
             <p>
-              After graduating from university with a degree in Journalism, I decided to take a gap year to explore
-              Asia. That one year turned into three, and I found myself completely captivated by the diverse cultures,
-              landscapes, and cuisines I encountered.
+              My journey as a writer began with the desire to honor and acknowledge the immense contributions of mothers
+              in shaping our communities. Through this platform, I share stories, tributes, and lessons I've learned from
+              the women who raised me and the many mothers around the world.
             </p>
 
             <p>
-              I started this blog in 2018 to share my travel experiences and provide practical advice to fellow
-              travelers. My goal is to inspire others to step out of their comfort zones and explore the world, while
-              also promoting responsible and sustainable tourism.
+              When I’m not writing or spending time with my family, you’ll find me advocating for women's rights and
+              working towards a world where every mother is supported, celebrated, and appreciated.
             </p>
 
-            <p>
-              When I'm not traveling or writing, you can find me hiking in the mountains, experimenting with recipes
-              I've learned abroad, or planning my next adventure.
-            </p>
-
-            <p>Thank you for joining me on this journey!</p>
+            <p>Thank you for visiting, and I hope this blog brings joy, inspiration, and love to you.</p>
           </div>
 
           <div className="author-social">
@@ -68,28 +63,32 @@ const AboutPage = () => {
 
         <div className="features-grid">
           <div className="feature-item">
-            <h3>Travel Guides</h3>
+            <h3>Mother's Day Tributes</h3>
             <p>
-              Detailed guides to help you plan your trips, including where to stay, what to eat, and what to see in
-              destinations around the world.
+              Heartfelt tributes to mothers, celebrating their influence and the lessons they teach us. These stories
+              highlight the unique relationship between mothers and their children.
             </p>
           </div>
 
           <div className="feature-item">
-            <h3>Cultural Experiences</h3>
-            <p>Stories about local traditions, festivals, and cultural practices I've encountered during my travels.</p>
-          </div>
-
-          <div className="feature-item">
-            <h3>Food Adventures</h3>
+            <h3>Life Lessons from Moms</h3>
             <p>
-              Explorations of local cuisines, street food, cooking classes, and food markets from different countries.
+              Sharing the valuable life lessons imparted by mothers, exploring how these lessons shape our values, choices,
+              and relationships.
             </p>
           </div>
 
           <div className="feature-item">
-            <h3>Photography Tips</h3>
-            <p>Advice on capturing the best travel photos, equipment recommendations, and editing techniques.</p>
+            <h3>Messages of Love</h3>
+            <p>
+              Inspiring messages of love, encouragement, and gratitude, dedicated to mothers everywhere for the
+              immeasurable love they give.
+            </p>
+          </div>
+
+          <div className="feature-item">
+            <h3>Personal Stories</h3>
+            <p>Stories from my own life and the mothers who have made an impact on me and those around me.</p>
           </div>
         </div>
       </section>
