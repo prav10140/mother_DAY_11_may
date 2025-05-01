@@ -71,7 +71,7 @@ const HomePage = () => {
 
           <aside className="sidebar">
             <div className="featured-writers">
-              <h3 className="sidebar-title">Featured Writers</h3>
+              <h3 className="sidebar-title">Several famous writers have paid tribute to their mothers in their works</h3>
               <div className="writers-list">
                 <div className="writer-item">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HBTYt1BXQIjXVSXeidPJsMo9X_QOKIdnwSLfUOQ5uBvZ66Q&s" alt="Sarah Johnson" className="writer-image" />
