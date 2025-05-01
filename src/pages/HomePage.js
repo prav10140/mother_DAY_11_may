@@ -26,7 +26,7 @@ const HomePage = () => {
         "My mother wasn't one for long lectures, but the quiet lessons she taught through her actions have shaped who I am today...",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCgymQPrXoKOQfsBe7Q4RTjpOCb4grxQdWg&s",
       readingTime: "8 minutes",
-      author: "Sarah Johnson",
+      author: "P R A V E E N'",
     },
     {
       title: "A Poem for the Woman Who Raised Me",
@@ -36,7 +36,7 @@ const HomePage = () => {
         "In the quiet moments of dawn, I think of you. Your hands, weathered by time but gentle in their touch, have guided me through life's storms...",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tIqSl0Mt_6M6e-eXnAZATk5RgF3R5qAvqQ&s",
       readingTime: "5 minutes",
-      author: "Michael Chen",
+      author: "P R A V E E N'",
     },
     {
       title: "Celebrating My Grandmother: The Matriarch of Our Family",
@@ -46,7 +46,7 @@ const HomePage = () => {
         "My grandmother raised eight children during times of hardship, yet she never lost her smile or her ability to make everyone feel special...",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s",
       readingTime: "10 minutes",
-      author: "Elena Rodriguez",
+      author: "P R A V E E N'",
     },
   ]
 
