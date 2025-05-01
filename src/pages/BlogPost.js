@@ -1,34 +1,43 @@
-"use client"
-import { useParams, Link } from "react-router-dom"
-import { FaFacebook, FaTwitter, FaPinterest, FaLink } from "react-icons/fa"
-import BlogPostCard from "../components/BlogPostCard"
-import AuthorBio from "../components/AuthorBio"
-import "./BlogPost.css"
-import blogData from "../data/blogData"
+"use client";
+import { useParams, Link } from "react-router-dom";
+import { FaFacebook, FaTwitter, FaPinterest, FaLink } from "react-icons/fa";
+import BlogPostCard from "../components/BlogPostCard";
+import AuthorBio from "../components/AuthorBio";
+import blogPosts from "../data/blogPosts"; // Import the blog posts data
+import "./BlogPost.css";
 
 const BlogPost = () => {
-  const { slug } = useParams()
+  const { slug } = useParams();
 
-  // Get the post data based on the slug
-  const post = blogData.getPostBySlug(slug)
+  // Find the post that matches the slug from the blogPosts data
+  const post = blogPosts.find((p) => p.slug === slug);
 
-  // Get related posts
-  const relatedPosts = blogData.getRelatedPosts(post?.id) || []
-
-  // If post not found, show a message
   if (!post) {
     return (
-      <div className="blog-post-page">
-        <div className="post-not-found">
-          <h1>Post Not Found</h1>
-          <p>Sorry, the post you're looking for doesn't exist.</p>
-          <Link to="/" className="read-more-btn">
-            Return to Home
-          </Link>
-        </div>
+      <div className="error-page">
+        <h2>Oops! The post you are looking for doesn't exist.</h2>
+        <p>It might have been moved or deleted. Please check the URL or go back to the homepage.</p>
       </div>
-    )
+    ); // Handle case when post is not found
   }
+
+  // Social share functionality
+  const shareToFacebook = () => {
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`, '_blank');
+  };
+
+  const shareToTwitter = () => {
+    window.open(`https://twitter.com/intent/tweet?url=${window.location.href}`, '_blank');
+  };
+
+  const shareToPinterest = () => {
+    window.open(`https://pinterest.com/pin/create/button/?url=${window.location.href}`, '_blank');
+  };
+
+  const shareToLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    alert('Link copied to clipboard!');
+  };
 
   return (
     <div className="blog-post-page">
@@ -45,22 +54,22 @@ const BlogPost = () => {
         </header>
 
         <div className="post-image">
-          <img src={post.image || "/placeholder.svg"} alt={post.title} />
+          <img src={post.image || "/placeholder.svg"} alt={post.title} loading="lazy" />
         </div>
 
         <div className="post-share">
           <span>Share:</span>
           <div className="share-buttons">
-            <button>
+            <button onClick={shareToFacebook}>
               <FaFacebook />
             </button>
-            <button>
+            <button onClick={shareToTwitter}>
               <FaTwitter />
             </button>
-            <button>
+            <button onClick={shareToPinterest}>
               <FaPinterest />
             </button>
-            <button>
+            <button onClick={shareToLink}>
               <FaLink />
             </button>
           </div>
@@ -70,16 +79,16 @@ const BlogPost = () => {
 
         <div className="post-tags">
           <span>Tags:</span>
-          <Link to="/tag/japan">Japan</Link>
-          <Link to="/tag/travel-tips">Travel Tips</Link>
-          <Link to="/tag/seasons">Seasons</Link>
+          {post.tags && post.tags.map((tag, index) => (
+            <Link to={`/tag/${tag}`} key={index}>{tag}</Link>
+          ))}
         </div>
       </article>
 
       <section className="related-posts">
         <h2 className="section-title">You might also like</h2>
         <div className="related-posts-grid">
-          {relatedPosts.map((relatedPost, index) => (
+          {post.relatedPosts.map((relatedPost, index) => (
             <BlogPostCard key={index} post={relatedPost} />
           ))}
         </div>
@@ -89,7 +98,7 @@ const BlogPost = () => {
         <AuthorBio />
       </aside>
     </div>
-  )
-}
+  );
+};
 
-export default BlogPost
+export default BlogPost;
