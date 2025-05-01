@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
-import "./BlogPostCard.css"
+import { Link } from "react-router-dom";
+import "./BlogPostCard.css";
 
 const BlogPostCard = ({ post }) => {
-  // Normalize category to URL slug: lowercase + dashes
-  const categorySlug = post.category.toLowerCase().replace(/\s+/g, "-")
+  // Safely access category and normalize it to a URL slug (lowercase + dashes)
+  const categorySlug = post.category ? post.category.toLowerCase().replace(/\s+/g, "-") : "";
 
   return (
     <article className="blog-post-card">
@@ -31,7 +31,7 @@ const BlogPostCard = ({ post }) => {
         </div>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default BlogPostCard
+export default BlogPostCard;
