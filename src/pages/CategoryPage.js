@@ -1,29 +1,20 @@
-import { useParams } from "react-router-dom";
-import { useState } from "react";
-import BlogPostCard from "../components/BlogPostCard";
-import Pagination from "../components/Pagination";
-import AuthorBio from "../components/AuthorBio";
-import DestinationsList from "../components/DestinationsList";
-import blogPosts from "../data/blogPosts";
-import "./CategoryPage.css";
+"use client"
+import { useParams } from "react-router-dom"
+import BlogPostCard from "../components/BlogPostCard"
+import Pagination from "../components/Pagination"
+import AuthorBio from "../components/AuthorBio"
+import DestinationsList from "../components/DestinationsList"
+import blogData from "../data/blogData"
+import "./CategoryPage.css"
 
 const CategoryPage = () => {
-  const { category } = useParams();
-  const [currentPage, setCurrentPage] = useState(1);
+  const { category } = useParams()
 
-  // Filter posts by category
-  const categoryPosts = blogPosts.filter(
-    (post) => post.category.toLowerCase() === category.toLowerCase()
-  );
+  // Get posts for this category from our data file
+  const categoryPosts = blogData.getPostsByCategory(category)
 
-  // Calculate pagination values
-  const postsPerPage = 3;
-  const totalPages = Math.ceil(categoryPosts.length / postsPerPage);
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const currentPosts = categoryPosts.slice(startIndex, startIndex + postsPerPage);
-
-  // Capitalize the first letter of category
-  const displayCategory = category.charAt(0).toUpperCase() + category.slice(1);
+  // Capitalize first letter of category for display
+  const displayCategory = category.charAt(0).toUpperCase() + category.slice(1)
 
   return (
     <div className="category-page">
@@ -36,18 +27,12 @@ const CategoryPage = () => {
 
       <div className="category-content">
         <div className="main-content">
-          {currentPosts.length === 0 ? (
-            <p>No posts available in this category.</p>
+          {categoryPosts.length > 0 ? (
+            categoryPosts.map((post, index) => <BlogPostCard key={index} post={post} />)
           ) : (
-            currentPosts.map((post, index) => (
-              <BlogPostCard key={index} post={post} />
-            ))
+            <p className="no-posts-message">No posts found in this category.</p>
           )}
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            onPageChange={setCurrentPage}
-          />
+          {categoryPosts.length > 0 && <Pagination currentPage={1} totalPages={Math.ceil(categoryPosts.length / 3)} />}
         </div>
 
         <aside className="sidebar">
@@ -56,7 +41,7 @@ const CategoryPage = () => {
         </aside>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CategoryPage;
+export default CategoryPage
