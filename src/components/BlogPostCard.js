@@ -5,7 +5,7 @@ const BlogPostCard = ({ post }) => {
   return (
     <article className="blog-post-card">
       <div className="post-image">
-        <Link to={`/post/${post.slug}`}>
+        <Link to={`/blog/${post.slug}`}>
           <img src={post.image || "/placeholder.svg"} alt={post.title} />
         </Link>
       </div>
@@ -17,12 +17,12 @@ const BlogPostCard = ({ post }) => {
           <span className="post-reading-time">{post.readingTime} reading</span>
         </div>
         <h3 className="post-title">
-          <Link to={`/post/${post.slug}`}>{post.title}</Link>
+          <Link to={`/blog/${post.slug}`}>{post.title}</Link>
         </h3>
         <p className="post-excerpt">{post.excerpt}</p>
         <div className="post-footer">
           {post.author && <span className="post-author">By {post.author}</span>}
-          <Link to={`/post/${post.slug}`} className="read-more-btn">
+          <Link to={`/blog/${post.slug}`} className="read-more-btn">
             Read more
           </Link>
         </div>
