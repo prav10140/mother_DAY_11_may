@@ -42,7 +42,34 @@ const blogData = [
       { title: "Why We Celebrate Mother's Day Around the World", slug: "global-mothers-day", image: "/images/mothers-day-global.jpg" },
     ],
   },
-
+  {
+    title: "The Lessons My Mother Taught Me That I'll Never Forget",
+    slug: "the-lessons-my-mother-taught-me-that-ill-never-forget",
+    category: "Tributes",
+    date: "May 1, 2025",
+    readingTime: "5 min",
+    excerpt: "My mother wasn't one for long lectures, but the quiet lessons she taught through her actions have shaped who I am today...",
+    content: `
+      <p>My mother wasn't one for long lectures, but the quiet lessons she taught through her actions have shaped who I am today. Her wisdom was often subtle, tucked away in everyday moments that most people might overlook. These lessons, though not spoken aloud, are deeply embedded in my heart and continue to guide me every day.</p>
+      <p>One of the most powerful lessons my mother imparted was the importance of kindness. Whether she was helping a neighbor or volunteering her time at the local shelter, her selflessness was a constant reminder that small acts of kindness can make a big difference in the world. She taught me that you don't need to be famous or wealthy to have an impact — it's the little things, the quiet gestures, that matter most.</p>
+      <p>Another lesson my mother instilled in me was resilience. She faced many hardships in her life, but never once did I see her give up or lose hope. Even in the toughest times, she remained strong and determined. She showed me that it's okay to stumble, but it's important to get back up and keep moving forward.</p>
+      <p>Perhaps the most significant lesson she taught me was the power of love and family. No matter how busy or challenging life became, my mother always made time for her loved ones. She taught me that family isn't just about blood relations — it's about the people who support you, lift you up, and walk alongside you through life's journey.</p>
+      <p>Today, as I navigate the ups and downs of life, I carry these lessons with me. They guide me, ground me, and remind me of the incredible woman who shaped me into who I am today. Thank you, Mom, for all the quiet lessons you gave me, and for being the greatest teacher I could have ever asked for.</p>
+    `,
+    tags: ["Mother", "Lessons", "Kindness", "Resilience", "Family", "Tribute"],
+    author: "Sarah Johnson",
+    image: "/images/mother-tribute.jpg", // Optional: add an image of your choice
+    relatedPosts: [
+      {
+        slug: "a-tribute-to-my-mother",
+        title: "A Tribute to My Mother"
+      },
+      {
+        slug: "the-greatest-gift-my-mother-gave-me",
+        title: "The Greatest Gift My Mother Gave Me"
+      }
+    ]
+  },
   // — Poems —
   {
     title: "A Poem for the Woman Who Raised Me",
@@ -139,7 +166,34 @@ const blogData = [
       { title: "Why Moms Are Everyday Superheroes", slug: "moms-are-superheroes", image: "/images/mom-superhero.jpg" },
     ],
   },
-
+  {
+    title: "Celebrating My Grandmother: The Matriarch of Our Family",
+    slug: "celebrating-my-grandmother-the-matriarch-of-our-family",
+    category: "Tributes",
+    date: "May 1, 2025",
+    readingTime: "10 min",
+    excerpt: "My grandmother raised eight children during times of hardship, yet she never lost her smile or her ability to make everyone feel special...",
+    content: `
+      <p>My grandmother was the heart and soul of our family. She raised eight children during times of hardship, yet she never lost her smile or her ability to make everyone feel special. Her presence was like a beacon of love, warmth, and wisdom, and she had an uncanny way of making even the most ordinary moments feel extraordinary.</p>
+      <p>Growing up, I would often sit at her feet as she told stories about the past — tales of perseverance, love, and sacrifice. My grandmother lived through some of the most challenging periods in history, but she always found a way to keep her family together. Her strength was quiet, but unwavering. She taught us the value of resilience, the importance of family, and how to love unconditionally.</p>
+      <p>One of the most memorable lessons she taught me was the importance of kindness. No matter how tough things got, my grandmother always made time to listen, to comfort, and to help those around her. Her door was always open, and her heart was always ready to welcome anyone in need. She showed me that kindness is a strength, not a weakness, and that by lifting others, we uplift ourselves.</p>
+      <p>My grandmother was also a woman of great faith. Her belief in God guided every aspect of her life, and she instilled that same faith in all of us. Her prayers were powerful, and her unwavering faith was a constant source of inspiration. Through her, I learned that faith is not just about words, but about living your life in a way that reflects your beliefs.</p>
+      <p>As I reflect on my grandmother's life, I realize how much she shaped who I am today. She was more than just a grandmother; she was the glue that held our family together. Her legacy lives on in each of us, and we are forever grateful for the lessons she imparted. She may no longer be with us in body, but her spirit will always be with us, guiding us and reminding us of the importance of love, family, and resilience.</p>
+    `,
+    tags: ["Grandmother", "Family", "Love", "Resilience", "Faith", "Tribute"],
+    author: "Elena Rodriguez",
+    image: "/images/grandmother-tribute.jpg", // Optional: add an image of your choice
+    relatedPosts: [
+      {
+        slug: "a-tribute-to-my-mother",
+        title: "A Tribute to My Mother"
+      },
+      {
+        slug: "the-lessons-my-mother-taught-me-that-ill-never-forget",
+        title: "The Lessons My Mother Taught Me That I'll Never Forget"
+      }
+    ]
+  },
   // — (plus your existing posts…) —
 ];
 
