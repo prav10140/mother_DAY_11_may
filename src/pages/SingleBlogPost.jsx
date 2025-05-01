@@ -1,41 +1,74 @@
-"use client"
+// src/pages/SingleBlogPost.jsx
+"use client";
 
-import { useParams, Link } from "react-router-dom"
-import { FaFacebook, FaTwitter, FaPinterest, FaLink } from "react-icons/fa"
-import BlogPostCard from "../components/BlogPostCard"
-import AuthorBio from "../components/AuthorBio"
-import blogData from "../data/blogData"
-import "./BlogPost.css"
+import { useParams, Link } from "react-router-dom";
+import { FaFacebook, FaTwitter, FaPinterest, FaLink } from "react-icons/fa";
+import BlogPostCard from "../components/BlogPostCard";
+import AuthorBio from "../components/AuthorBio";
+import blogData from "../data/blogData";
+import "./BlogPost.css";
 
 const SingleBlogPost = () => {
-  const { slug } = useParams()
+  const { slug } = useParams();
 
-  // Get the post data from our data file
-  const post = blogData.getPostBySlug(slug)
+  // 1) Find our main post
+  const post = blogData.find((p) => p.slug === slug);
 
-  // Get related posts
-  const relatedPosts = post ? blogData.getRelatedPosts(post.id) : []
-
-  // If post not found
+  // If not found, show a friendly message
   if (!post) {
     return (
       <div className="blog-post-page">
         <div className="post-not-found">
           <h1>Post Not Found</h1>
-          <p>Sorry, the blog post you're looking for doesn't exist.</p>
+          <p>Sorry, the blog post you’re looking for doesn’t exist.</p>
           <Link to="/" className="read-more-btn">
             Return to Home
           </Link>
         </div>
       </div>
-    )
+    );
   }
+
+  // 2) For each relatedPosts entry, look up the full post object by slug
+  const relatedPosts = (post.relatedPosts || [])
+    .map((r) => blogData.find((p) => p.slug === r.slug))
+    .filter(Boolean);
+
+  // Social share handlers
+  const shareToFacebook = () =>
+    window.open(
+      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+        window.location.href
+      )}`,
+      "_blank"
+    );
+  const shareToTwitter = () =>
+    window.open(
+      `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+        window.location.href
+      )}`,
+      "_blank"
+    );
+  const shareToPinterest = () =>
+    window.open(
+      `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(
+        window.location.href
+      )}`,
+      "_blank"
+    );
+  const shareToLink = () => {
+    navigator.clipboard.writeText(window.location.href);
+    alert("Link copied to clipboard!");
+  };
 
   return (
     <div className="blog-post-page">
       <article className="blog-post">
         <header className="post-header">
-          <Link to={`/category/${post.category.toLowerCase()}`} className="post-category">
+          <Link
+            to={`/category/${post.category.toLowerCase()}`}
+            className="post-category"
+          >
             {post.category}
           </Link>
           <h1 className="post-title">{post.title}</h1>
@@ -46,46 +79,57 @@ const SingleBlogPost = () => {
         </header>
 
         <div className="post-image">
-          <img src={post.image || "/placeholder.svg"} alt={post.title} />
+          <img
+            src={post.image || "/placeholder.svg"}
+            alt={post.title}
+            loading="lazy"
+          />
         </div>
 
         <div className="post-share">
           <span>Share:</span>
           <div className="share-buttons">
-            <button>
+            <button onClick={shareToFacebook}>
               <FaFacebook />
             </button>
-            <button>
+            <button onClick={shareToTwitter}>
               <FaTwitter />
             </button>
-            <button>
+            <button onClick={shareToPinterest}>
               <FaPinterest />
             </button>
-            <button>
+            <button onClick={shareToLink}>
               <FaLink />
             </button>
           </div>
         </div>
 
-        <div className="post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div
+          className="post-content"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
 
-        <div className="post-tags">
-          <span>Tags:</span>
-          {post.tags &&
-            post.tags.map((tag, index) => (
-              <Link key={index} to={`/tag/${tag.toLowerCase().replace(/\s+/g, "-")}`}>
+        {post.tags && (
+          <div className="post-tags">
+            <span>Tags:</span>
+            {post.tags.map((tag, i) => (
+              <Link
+                to={`/tag/${tag.toLowerCase().replace(/\s+/g, "-")}`}
+                key={i}
+              >
                 {tag}
               </Link>
             ))}
-        </div>
+          </div>
+        )}
       </article>
 
       {relatedPosts.length > 0 && (
         <section className="related-posts">
           <h2 className="section-title">You might also like</h2>
           <div className="related-posts-grid">
-            {relatedPosts.map((relatedPost, index) => (
-              <BlogPostCard key={index} post={relatedPost} />
+            {relatedPosts.map((rp) => (
+              <BlogPostCard key={rp.slug} post={rp} />
             ))}
           </div>
         </section>
@@ -95,7 +139,7 @@ const SingleBlogPost = () => {
         <AuthorBio />
       </aside>
     </div>
-  )
-}
+  );
+};
 
-export default SingleBlogPost
+export default SingleBlogPost;
