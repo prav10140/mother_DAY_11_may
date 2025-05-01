@@ -684,15 +684,28 @@ const blogData = {
     return Math.ceil(this.posts.length / postsPerPage)
   },
 
+ 
+  // Get posts by page (for pagination)
+  getPostsByPage: function (page, postsPerPage = 3) {
+    const startIndex = (page - 1) * postsPerPage
+    const endIndex = startIndex + postsPerPage
+    return this.posts.slice(startIndex, endIndex)
+  },
+
+  // Get total number of pages
+  getTotalPages: function (postsPerPage = 3) {
+    return Math.ceil(this.posts.length / postsPerPage)
+  },
+
   // Get post by slug
   getPostBySlug: function (slug) {
-  const post = this.posts.find((post) => post.slug === slug);
-  if (!post) {
-    console.error(`Post with slug "${slug}" not found.`);
-    return null;
-  }
-  return post;
-}
+    const post = this.posts.find((post) => post.slug === slug)
+    if (!post) {
+      console.error(`Post with slug "${slug}" not found.`)
+      return null
+    }
+    return post
+  },
 
   // Get posts by category
   getPostsByCategory: function (category) {
@@ -704,7 +717,9 @@ const blogData = {
     const post = this.posts.find((p) => p.id === postId)
     if (!post || !post.relatedPosts) return []
 
-    return post.relatedPosts.map((relatedSlug) => this.posts.find((p) => p.slug === relatedSlug)).filter((p) => p) // Filter out any undefined posts
+    return post.relatedPosts
+      .map((relatedSlug) => this.posts.find((p) => p.slug === relatedSlug))
+      .filter((p) => p) // Filter out any undefined posts
   },
 }
 
