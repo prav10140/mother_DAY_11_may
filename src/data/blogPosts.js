@@ -686,8 +686,13 @@ const blogData = {
 
   // Get post by slug
   getPostBySlug: function (slug) {
-    return this.posts.find((post) => post.slug === slug)
-  },
+  const post = this.posts.find((post) => post.slug === slug);
+  if (!post) {
+    console.error(`Post with slug "${slug}" not found.`);
+    return null;
+  }
+  return post;
+}
 
   // Get posts by category
   getPostsByCategory: function (category) {
