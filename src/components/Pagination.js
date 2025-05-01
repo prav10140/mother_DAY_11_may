@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom"
 import "./Pagination.css"
-import blogData from "../data/blogData"
 
 const Pagination = ({ currentPage, totalPages }) => {
-  // Calculate total pages from blog data if not provided
-  const calculatedTotalPages = totalPages || blogData.getTotalPages()
-
-  // Create an array of page numbers to display
   const pageNumbers = []
-  for (let i = 1; i <= calculatedTotalPages; i++) {
+
+  for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i)
   }
 
@@ -28,8 +24,8 @@ const Pagination = ({ currentPage, totalPages }) => {
       ))}
 
       <Link
-        to={currentPage < calculatedTotalPages ? `/page/${currentPage + 1}` : "#"}
-        className={`page-nav next ${currentPage === calculatedTotalPages ? "disabled" : ""}`}
+        to={currentPage < totalPages ? `/page/${currentPage + 1}` : "#"}
+        className={`page-nav next ${currentPage === totalPages ? "disabled" : ""}`}
       >
         &#10095;
       </Link>
