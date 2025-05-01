@@ -7,7 +7,7 @@ const blogData = [
     category: "Letters",
     excerpt:
       "Mom, words cannot express how grateful I am for all the sacrifices you've made and the love you've shown me throughout my life...",
-    image: "/images/mother-letter.jpg",
+    image: "https://www.momjunction.com/wp-content/uploads/2019/05/Letters-To-Mom_1200px.jpg.webp8=",
     content: `
       <p>Dear Mom,</p>
       <p>On this Mother's Day, I want to pause and say thank you—for your endless love, sacrifices, and unwavering belief in me. From the little things like your warm meals to the big lessons in kindness and strength, you've been my silent support through every stage of life.</p>
@@ -30,7 +30,7 @@ const blogData = [
     category: "Stories",
     excerpt:
       "This Mother's Day, explore inspiring stories of maternal strength and sacrifice from different cultures...",
-    image: "/images/global-moms.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKh2KiJhHikk1vvNvvNCUGbD2O3Jvyf78X6A&s",
     content: `
       <p>In Japan, children lovingly serve tea to their mothers in the morning. In Mexico, families gather for a serenade called 'Las Mañanitas'. Each culture weaves its own tapestry of appreciation for the women who raised us.</p>
       <p>These stories remind us that a mother's love truly knows no borders.</p>
@@ -58,7 +58,7 @@ const blogData = [
     `,
     tags: ["Mother", "Lessons", "Kindness", "Resilience", "Family", "Tribute"],
     author: "P R A V E E N'",
-    image: "/images/mother-tribute.jpg", // Optional: add an image of your choice
+    image: "https://i.pinimg.com/474x/3b/a7/ce/3ba7ce57f083e1cbccb3ed5c60ca1966.jpg", // Optional: add an image of your choice
     relatedPosts: [
       {
         slug: "a-tribute-to-my-mother",
@@ -77,7 +77,7 @@ const blogData = [
     category: "Poems",
     excerpt:
       "In the quiet moments of dawn, I think of you. Your hands, weathered by time but gentle in their touch, have guided me through life's storms...",
-    image: "/images/mother-poem.jpg",
+    image: "https://cdn.vectorstock.com/i/1000v/45/14/a-love-of-mother-and-daughter-vector-2024514.jpg",
     content: `
       <blockquote>
         <p>Your love is the river<br/>
@@ -102,7 +102,7 @@ const blogData = [
     category: "Memories",
     excerpt:
       "From spilled pancake batter on the counter to sleepy hugs before school, these memories remind me of the small moments that meant the world...",
-    image: "/images/pancakes.jpg",
+    image: "https://m.media-amazon.com/images/I/616IWlipfjL.jpg",
     content: `
       <p>Every Sunday morning, my mom and I would don our aprons and flip pancakes. They never looked perfect, but they tasted like home.</p>
       <p>Those sticky countertops and flour-dusted floors are some of my favorite snapshots of growing up.</p>
@@ -122,7 +122,7 @@ const blogData = [
     category: "Recipes",
     excerpt:
       "Crisp apples, buttery crust, and a hint of cinnamon—this is the pie that defined every family gathering. Here’s Mom’s secret recipe...",
-    image: "/images/apple-pie.jpg",
+    image: "https://www.eurokidsindia.com/blog/wp-content/uploads/2024/01/mothers-love.jpg8=",
     content: `
       <h3>Ingredients:</h3>
       <ul>
@@ -154,7 +154,7 @@ const blogData = [
     category: "Tributes",
     excerpt:
       "There’s no love quite like a mother’s. This is my tribute to the woman whose quiet strength and unwavering faith lifted our family through every storm.",
-    image: "/images/supermom-tribute.jpg",
+    image: "https://www.shutterstock.com/shutterstock/photos/449993539/display_1500/stock-vector-mother-s-day-embracing-love-mom-children-of-love-son-hugging-his-mother-449993539.jpg",
     content: `
       <p>She never wore a cape.</p>
       <p>But every day, she saved my world with her courage, her kindness, and her endless love.</p>
@@ -182,7 +182,7 @@ const blogData = [
     `,
     tags: ["Grandmother", "Family", "Love", "Resilience", "Faith", "Tribute"],
     author: "Elena Rodriguez",
-    image: "/images/grandmother-tribute.jpg", // Optional: add an image of your choice
+    image: "https://www.focusonthefamily.com/wp-content/uploads/2024/02/the-power-of-a-mothers-love-65cd2be43fd2f.webp", // Optional: add an image of your choice
     relatedPosts: [
       {
         slug: "a-tribute-to-my-mother",
