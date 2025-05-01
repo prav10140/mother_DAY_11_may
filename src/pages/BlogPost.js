@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaPinterest, FaLink } from "react-icons/fa";
 import BlogPostCard from "../components/BlogPostCard";
 import AuthorBio from "../components/AuthorBio";
-import blogPosts from "../data/blogPosts"; // Import the blog posts data
+import blogData from "../data/blogData"; // Import the blog posts data
 import "./BlogPost.css";
 
 const BlogPost = () => {
