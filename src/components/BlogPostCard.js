@@ -2,6 +2,9 @@ import { Link } from "react-router-dom"
 import "./BlogPostCard.css"
 
 const BlogPostCard = ({ post }) => {
+  // Normalize category to URL slug: lowercase + dashes
+  const categorySlug = post.category.toLowerCase().replace(/\s+/g, "-")
+
   return (
     <article className="blog-post-card">
       <div className="post-image">
@@ -11,7 +14,7 @@ const BlogPostCard = ({ post }) => {
       </div>
       <div className="post-content">
         <div className="post-meta">
-          <Link to={`/category/${post.category.toLowerCase()}`} className="post-category">
+          <Link to={`/category/${categorySlug}`} className="post-category">
             #{post.category}
           </Link>
           <span className="post-reading-time">{post.readingTime} reading</span>
