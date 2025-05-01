@@ -1,4 +1,4 @@
-const blogPosts = [
+const blogData = [
   {
     title: "A Heartfelt Tribute to My Mother",
     slug: "mothers-day-tribute",
@@ -93,4 +93,4 @@ const blogPosts = [
 
 
 
-export default blogPosts;
+export default blogData;
