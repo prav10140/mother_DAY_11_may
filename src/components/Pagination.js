@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
-import "./Pagination.css";
+import { Link } from "react-router-dom"
+import "./Pagination.css"
+import blogData from "../data/blogData"
 
 const Pagination = ({ currentPage, totalPages }) => {
-  const pageNumbers = [];
+  // Calculate total pages from blog data if not provided
+  const calculatedTotalPages = totalPages || blogData.getTotalPages()
 
-  for (let i = 1; i <= totalPages; i++) {
-    pageNumbers.push(i);
+  // Create an array of page numbers to display
+  const pageNumbers = []
+  for (let i = 1; i <= calculatedTotalPages; i++) {
+    pageNumbers.push(i)
   }
 
   return (
@@ -13,32 +17,24 @@ const Pagination = ({ currentPage, totalPages }) => {
       <Link
         to={currentPage > 1 ? `/page/${currentPage - 1}` : "#"}
         className={`page-nav prev ${currentPage === 1 ? "disabled" : ""}`}
-        aria-disabled={currentPage === 1 ? "true" : "false"}
-        tabIndex={currentPage === 1 ? "-1" : "0"}
       >
         &#10094;
       </Link>
 
       {pageNumbers.map((number) => (
-        <Link
-          key={number}
-          to={`/page/${number}`}
-          className={`page-number ${currentPage === number ? "active" : ""}`}
-        >
+        <Link key={number} to={`/page/${number}`} className={`page-number ${currentPage === number ? "active" : ""}`}>
           {number}
         </Link>
       ))}
 
       <Link
-        to={currentPage < totalPages ? `/page/${currentPage + 1}` : "#"}
-        className={`page-nav next ${currentPage === totalPages ? "disabled" : ""}`}
-        aria-disabled={currentPage === totalPages ? "true" : "false"}
-        tabIndex={currentPage === totalPages ? "-1" : "0"}
+        to={currentPage < calculatedTotalPages ? `/page/${currentPage + 1}` : "#"}
+        className={`page-nav next ${currentPage === calculatedTotalPages ? "disabled" : ""}`}
       >
         &#10095;
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Pagination;
+export default Pagination
