@@ -9,8 +9,8 @@ import "./BlogPost.css";
 const BlogPost = () => {
   const { slug } = useParams();
 
-  // Find the post that matches the slug from the blogPosts data
-  const post = blogPosts.find((p) => p.slug === slug);
+  // Find the post that matches the slug from the blogData
+  const post = blogData.find((p) => p.slug === slug);
 
   if (!post) {
     return (
@@ -18,7 +18,7 @@ const BlogPost = () => {
         <h2>Oops! The post you are looking for doesn't exist.</h2>
         <p>It might have been moved or deleted. Please check the URL or go back to the homepage.</p>
       </div>
-    ); // Handle case when post is not found
+    );
   }
 
   // Social share functionality
