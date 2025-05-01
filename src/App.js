@@ -6,6 +6,7 @@ import BlogPost from "./pages/BlogPost"
 import CategoryPage from "./pages/CategoryPage"
 import AboutPage from "./pages/AboutPage"
 import ContributePage from "./pages/ContributePage"
+import PagedBlogList from "./pages/PagedBlogList" // ✅ Add this
 import "./App.css"
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/category/:category" element={<CategoryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contribute" element={<ContributePage />} />
+            <Route path="/page/:page" element={<PagedBlogList />} /> {/* ✅ This line fixes your issue */}
           </Routes>
         </main>
         <Footer />
