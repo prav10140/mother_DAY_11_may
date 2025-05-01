@@ -44,10 +44,10 @@ const blogData = [
   },
   {
     title: "The Lessons My Mother Taught Me That I'll Never Forget",
-    slug: "the-lessons-my-mother-taught-me-that-ill-never-forget",
-    category: "Tributes",
+    slug: "lessons-from-mother",
+    category: "Stories",
     date: "May 1, 2025",
-    readingTime: "5 min",
+    readingTime: "8 minutes",
     excerpt: "My mother wasn't one for long lectures, but the quiet lessons she taught through her actions have shaped who I am today...",
     content: `
       <p>My mother wasn't one for long lectures, but the quiet lessons she taught through her actions have shaped who I am today. Her wisdom was often subtle, tucked away in everyday moments that most people might overlook. These lessons, though not spoken aloud, are deeply embedded in my heart and continue to guide me every day.</p>
@@ -57,7 +57,7 @@ const blogData = [
       <p>Today, as I navigate the ups and downs of life, I carry these lessons with me. They guide me, ground me, and remind me of the incredible woman who shaped me into who I am today. Thank you, Mom, for all the quiet lessons you gave me, and for being the greatest teacher I could have ever asked for.</p>
     `,
     tags: ["Mother", "Lessons", "Kindness", "Resilience", "Family", "Tribute"],
-    author: "Sarah Johnson",
+    author: "P R A V E E N'",
     image: "/images/mother-tribute.jpg", // Optional: add an image of your choice
     relatedPosts: [
       {
