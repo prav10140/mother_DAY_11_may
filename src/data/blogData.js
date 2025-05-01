@@ -1,8 +1,10 @@
+// src/data/blogData.js
+
 const blogData = [
   {
     title: "A Heartfelt Tribute to My Mother",
     slug: "mothers-day-tribute",
-    category: "Life & Reflections",
+    category: "Tributes",
     excerpt: "On this Mother’s Day, I pause to honor the woman whose love, strength, and sacrifices have shaped my world...",
     image: "/images/mothers-day-featured.jpg",
     content: "<p>This is the full content of the blog post...</p>",
@@ -17,7 +19,7 @@ const blogData = [
   {
     title: "10 Lessons My Mother Taught Me",
     slug: "life-lessons-from-mom",
-    category: "Life Advice",
+    category: "Life Lessons",
     excerpt: "From resilience to kindness, here are the most important lessons I’ve learned from my mom over the years...",
     image: "/images/coventry.jpg",
     content: "<p>Lesson 1: Resilience. My mother taught me that resilience is key to overcoming life’s obstacles...</p>",
@@ -77,7 +79,7 @@ const blogData = [
   {
     title: "The Most Beautiful Things My Mom Taught Me",
     slug: "beautiful-things-my-mom-taught-me",
-    category: "Life Lessons",
+    category: "Stories",
     excerpt: "From unconditional love to finding beauty in the smallest things, here are the most beautiful things my mom taught me...",
     image: "/images/beautiful-lessons.jpg",
     content: "<p>My mother taught me to see beauty in everything, from a sunset to a kind gesture. She showed me that the most meaningful things in life are often the simplest...</p>",
@@ -91,6 +93,5 @@ const blogData = [
   }
 ];
 
-
-
 export default blogData;
+
