@@ -18,8 +18,8 @@ const blogData = [
     readingTime: "4 minutes",
     tags: ["Letters", "Mother's Day", "Gratitude"],
     relatedPosts: [
-      { title: "10 Lessons My Mother Taught Me", slug: "life-lessons-from-mom", image: "/images/coventry.jpg" },
-      { title: "Why Moms Are Everyday Superheroes", slug: "moms-are-superheroes", image: "/images/mom-superhero.jpg" },
+      { title: "10 Lessons My Mother Taught Me", slug: "life-lessons-from-mom", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s" },
+      { title: "Why Moms Are Everyday Superheroes", slug: "moms-are-superheroes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuCgymQPrXoKOQfsBe7Q4RTjpOCb4grxQdWg&s" },
     ],
   },
 
@@ -39,7 +39,7 @@ const blogData = [
     readingTime: "6 minutes",
     tags: ["Stories", "Global", "Motherhood"],
     relatedPosts: [
-      { title: "Why We Celebrate Mother's Day Around the World", slug: "global-mothers-day", image: "/images/mothers-day-global.jpg" },
+      { title: "Why We Celebrate Mother's Day Around the World", slug: "global-mothers-day", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s" },
     ],
   },
   {
@@ -91,7 +91,7 @@ const blogData = [
     readingTime: "3 minutes",
     tags: ["Poems", "Mother's Day", "Tribute"],
     relatedPosts: [
-      { title: "A Letter to My Mom: Thank You for Everything", slug: "letter-to-mom-thank-you", image: "/images/mother-letter.jpg" },
+      { title: "A Letter to My Mom: Thank You for Everything", slug: "letter-to-mom-thank-you", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s" },
     ],
   },
 
@@ -111,7 +111,7 @@ const blogData = [
     readingTime: "5 minutes",
     tags: ["Memories", "Family", "Childhood"],
     relatedPosts: [
-      { title: "The Most Beautiful Things My Mom Taught Me", slug: "beautiful-things-my-mom-taught-me", image: "/images/beautiful-lessons.jpg" },
+      { title: "The Most Beautiful Things My Mom Taught Me", slug: "beautiful-things-my-mom-taught-me", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s" },
     ],
   },
 
@@ -143,7 +143,7 @@ const blogData = [
     readingTime: "4 minutes",
     tags: ["Recipes", "Food", "Family"],
     relatedPosts: [
-      { title: "Creative Ways to Celebrate Mother's Day at Home", slug: "celebrate-at-home", image: "/images/mothers-day-home.jpg" },
+      { title: "Creative Ways to Celebrate Mother's Day at Home", slug: "celebrate-at-home", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s" },
     ],
   },
 
@@ -163,7 +163,7 @@ const blogData = [
     readingTime: "3 minutes",
     tags: ["Tributes", "Motherhood", "Strength"],
     relatedPosts: [
-      { title: "Why Moms Are Everyday Superheroes", slug: "moms-are-superheroes", image: "/images/mom-superhero.jpg" },
+      { title: "Why Moms Are Everyday Superheroes", slug: "moms-are-superheroes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLNw9g7Pqr2mZrktvLeOuPSbaOaO3pEPraRQ&s" },
     ],
   },
   {
