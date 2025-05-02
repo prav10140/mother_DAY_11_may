@@ -10,7 +10,7 @@ const AboutPage = () => {
 
       <div className="about-content">
         <div className="author-image">
-          <img src="src/pages/rn_image_picker_lib_temp_2bdd454f_ea34_4c89_bc10_1fadb42d40d5BML87G (1).jpg" alt="Portrait of the author" />
+          <img src="rn_image_picker_lib_temp_2bdd454f_ea34_4c89_bc10_1fadb42d40d5BML87G (1).jpg" alt="Portrait of the author" />
         </div>
 
         <div className="author-info">
