@@ -25,10 +25,13 @@
 }
 
 .author-image img {
-  max-width: 300px;
-  border-radius: 50%;
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px; /* Optional: slight rounding for smoother corners */
   margin: 0 auto;
 }
+
 
 .author-name {
   font-size: 2rem;
