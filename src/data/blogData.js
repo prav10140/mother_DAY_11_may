@@ -168,7 +168,7 @@ const blogData = [
   },
   {
     title: "Celebrating My Grandmother: The Matriarch of Our Family",
-    slug: "celebrating-my-grandmother-the-matriarch-of-our-family",
+    slug: "celebrating-grandmother",
     category: "Tributes",
     date: "May 1, 2025",
     readingTime: "10 min",
