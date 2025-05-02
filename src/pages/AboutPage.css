@@ -28,10 +28,10 @@
   width: 120px;
   height: 150px;
   object-fit: cover;
-  border-radius: 4px; /* Optional: slight rounding for smoother corners */
+  border-radius: 0 !important;
   margin: 0 auto;
+  display: block;
 }
-
 
 .author-name {
   font-size: 2rem;
