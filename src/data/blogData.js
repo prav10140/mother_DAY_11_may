@@ -7,7 +7,7 @@ const blogData = [
     category: "Letters",
     excerpt:
       "Mom, words cannot express how grateful I am for all the sacrifices you've made and the love you've shown me throughout my life...",
-    image: "https://www.momjunction.com/wp-content/uploads/2019/05/Letters-To-Mom_1200px.jpg.webp8=",
+    image: "https://www.momjunction.com/wp-content/uploads/2019/05/Letters-To-Mom_1200px.jpg.webp",
     content: `
       <p>Dear Mom,</p>
       <p>On this Mother's Day, I want to pause and say thank you—for your endless love, sacrifices, and unwavering belief in me. From the little things like your warm meals to the big lessons in kindness and strength, you've been my silent support through every stage of life.</p>
@@ -122,7 +122,7 @@ const blogData = [
     category: "Recipes",
     excerpt:
       "Crisp apples, buttery crust, and a hint of cinnamon—this is the pie that defined every family gathering. Here’s Mom’s secret recipe...",
-    image: "https://www.eurokidsindia.com/blog/wp-content/uploads/2024/01/mothers-love.jpg8=",
+    image: "https://www.eurokidsindia.com/blog/wp-content/uploads/2024/01/mothers-love.jpg",
     content: `
       <h3>Ingredients:</h3>
       <ul>
