@@ -8,6 +8,7 @@ import CategoryPage from "./pages/CategoryPage"
 import AboutPage from "./pages/AboutPage"
 import ContributePage from "./pages/ContributePage"
 import PagedBlogList from "./pages/PagedBlogList"
+import ScrollToTop from "./components/ScrollToTop"  // Import ScrollToTop component
 import "./App.css"
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <Header />
       <main>
+        <ScrollToTop />  {/* Add ScrollToTop here */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/post/:slug" element={<BlogPost />} />
