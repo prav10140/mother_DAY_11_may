@@ -175,17 +175,17 @@ const ContributePage = () => {
         <h2>Featured Tributes</h2>
         <div className="tributes-grid">
           <div className="tribute-card">
-                  <img src="abc.jpg" alt="Contributor" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tIqSl0Mt_6M6e-eXnAZATk5RgF3R5qAvqQ&s" alt="Contributor" />
            <h3>"The Strength of a Mother's Love"</h3>
             <p>By Jennifer Adams</p>
           </div>
           <div className="tribute-card">
-                  <img src="abc.jpg" alt="Contributor" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HBTYt1BXQIjXVSXeidPJsMo9X_QOKIdnwSLfUOQ5uBvZ66Q&s" alt="Contributor" />
             <h3>"Lessons from My Mother's Kitchen"</h3>
             <p>By Robert Chen</p>
           </div>
           <div className="tribute-card">
-                  <img src="abc.jpg" alt="Contributor" />
+                  <img src="https://img.freepik.com/premium-vector/hand-drawn-illustration-mother-child-mothers-day_278222-10960.jpg?semt=ais_hybrid&w=740" alt="Contributor" />
             <h3>"My Grandmother's Legacy"</h3>
             <p>By Maria Gonzalez</p>
           </div>
