@@ -10,7 +10,7 @@ const AboutPage = () => {
 
       <div className="about-content">
         <div className="author-image">
-          <img src="file:///C:/Users/ACER/Downloads/rn_image_picker_lib_temp_2bdd454f_ea34_4c89_bc10_1fadb42d40d5BML87G%20(1).jpg" alt="Portrait of the author" />
+          <img src="https://drive.google.com/u/0/drive-viewer/AKGpihaF3XYBO5hwvTof2FTKU036grONMKbhQt5lKBSb8eVy6Q8215XwjanUXr-8066WIkaXBRaz9857GiPOELSBTJ-j12jY4-CNfw=s1600-rw-v1" alt="Portrait of the author" />
         </div>
 
         <div className="author-info">
