@@ -1,6 +1,6 @@
 # 🌸 Mother’s Day Tribute Blog
 
-A responsive tribute blog website created as part of the **Mother’s Day Blog Challenge**, using **Next.js** and **Tailwind CSS**, to honor and celebrate the love, strength, and stories of mothers.
+A responsive tribute blog website created as part of the **Mother’s Day Blog Challenge**, using **React.js** and **Tailwind CSS**, to honor and celebrate the love, strength, and stories of mothers.
 
 
 <img src="https://img.freepik.com/premium-vector/hand-drawn-illustration-mother-child-mothers-day_278222-10960.jpg?semt=ais_hybrid&w=740" alt="Banner" width="50%" height="50%" />
