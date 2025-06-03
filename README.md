@@ -2,7 +2,7 @@
 
 A responsive tribute blog website created as part of the **Mother’s Day Blog Challenge**, using **Next.js** and **Tailwind CSS**, to honor and celebrate the love, strength, and stories of mothers.
 
-![Banner](https://images.unsplash.com/photo-1589391886643-9609d46dcee9?fit=crop&w=1200&h=400)
+![Banner](https://img.freepik.com/premium-vector/hand-drawn-illustration-mother-child-mothers-day_278222-10960.jpg?semt=ais_hybrid&w=740)
 
 
 ---
