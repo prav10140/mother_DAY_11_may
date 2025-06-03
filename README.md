@@ -51,7 +51,6 @@ Built as part of a frontend development challenge to test UI/UX skills, dynamic 
 
 ## 🛠️ Tech Stack
 
-- [Next.js](https://nextjs.org/)
 - [React.js](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Unsplash](https://unsplash.com/) (for images)
